@@ -11,7 +11,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "BookGPT",
+  name: "heaven IA",
   description: "Upload a book, start asking question",
   mainNav: [
     {
