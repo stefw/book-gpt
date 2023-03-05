@@ -29,8 +29,8 @@ export async function handler(req: NextApiRequest, res: NextApiResponse) {
   })
 
   const fileData = Buffer.concat(chunks)
-  const openaiApiKey = fields["openai-api-key"]
-  const pineconeApiKey = fields["pinecone-api-key"]
+  const openaiApiKey = process.env.openaiApiKey;
+  const pineconeApiKey = process.env.pineconeApiKey;
 
   const { file } = files
   let fileText = ""
