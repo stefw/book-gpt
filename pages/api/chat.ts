@@ -17,19 +17,21 @@ export default async function handler(
   try {
     await pinecone.init({
       environment: "us-west1-gcp",
-      apiKey: credentials.pineconeApiKey,
+      apiKey:process.env.pineconeApiKey,
+      
     })
 
     const index = pinecone.Index(PINECONE_INDEX_NAME)
     const vectorStore = await PineconeStore.fromExistingIndex(
       index,
       new OpenAIEmbeddings({
-        openAIApiKey: credentials.openaiApiKey,
+        openAIApiKey:  process.env.openaiApiKey,
       })
     )
 
     const model = new OpenAI({
-      openAIApiKey: credentials.openaiApiKey,
+      openAIApiKey: process.env.openaiApiKey,
+     
     })
 
     const chain = ChatVectorDBQAChain.fromLLM(model, vectorStore)
