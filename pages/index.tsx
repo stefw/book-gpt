@@ -147,7 +147,7 @@ export default function IndexPage() {
       <section className="container flex flex-col justify-items-stretch gap-6 pt-6 pb-8 sm:flex-row md:py-10">
         <div className="min-w-1/5 flex flex-col items-start gap-2">
           <h2 className="mt-10 scroll-m-20 pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-0">
-            Upload a book
+            Envoie des infos sur heaven
           </h2>
           <div
             className="min-w-full rounded-md border border-slate-200 p-0 dark:border-slate-700"
@@ -173,15 +173,7 @@ export default function IndexPage() {
             </div>
           </div>
           <div>
-            This app needs you to{" "}
-            <Link
-              className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline"
-              href="/credentials"
-              rel="noreferrer"
-            >
-              add credentials
-            </Link>{" "}
-            to work properly.
+              Ces nouvelles données seront prises en compte dans le modèle.
           </div>
           <div className="self-start">
             <Button
@@ -205,7 +197,7 @@ export default function IndexPage() {
 
         <div className="flex grow flex-col items-start gap-2">
           <h2 className="mt-10 scroll-m-20 pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-0">
-            Ask me anything about the book
+           Demande moi ce que tu veux sur l'agence heaven
           </h2>
 
           <div className="w-full">
