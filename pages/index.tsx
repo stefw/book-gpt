@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils"
 import { Layout } from "@/components/layout"
 import { Button } from "@/components/ui/button"
 
-const DEFAULT_QUESTION = "what is this about?"
+const DEFAULT_QUESTION = "Qui est sophie ? Qui est Geoffrey ? Et décris moi heaven digital studio et heaven consulting"
 const INITIAL_MESSAGE = {
   from: "bot",
   content:
@@ -172,7 +172,7 @@ export default function IndexPage() {
             </div>
           </div>
           <div>
-              Ces nouvelles données seront prises en compte dans le modèle.
+              Ne touche à ça uniquement si tu sais ce que tu fais ! Ces nouvelles données seront prises en compte dans le modèle.
           </div>
           <div className="self-start">
             <Button
