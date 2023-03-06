@@ -172,7 +172,7 @@ export default function IndexPage() {
             </div>
           </div>
           <div>
-              Ne touche à ça uniquement si tu sais ce que tu fais ! Ces nouvelles données seront prises en compte dans le modèle.
+              Ne touche à ça uniquement si tu sais ce que tu fais !<br> Ces nouvelles données seront prises en compte dans le modèle.
           </div>
           <div className="self-start">
             <Button
