@@ -12,7 +12,7 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "heaven IA",
-  description: "Upload a book, start asking question",
+  description: "heaven IA",
   mainNav: [
     {
       title: "Home",
