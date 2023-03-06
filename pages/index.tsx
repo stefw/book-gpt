@@ -197,7 +197,7 @@ export default function IndexPage() {
 
         <div className="flex grow flex-col items-start gap-2">
           <h2 className="mt-10 scroll-m-20 pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-0">
-           Demande moi ce que tu veux sur l'agence heaven
+           Demande moi ce que tu veux sur heaven
           </h2>
 
           <div className="w-full">
