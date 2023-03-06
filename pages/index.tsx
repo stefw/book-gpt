@@ -15,7 +15,7 @@ const DEFAULT_QUESTION = "what is this about?"
 const INITIAL_MESSAGE = {
   from: "bot",
   content:
-    "You can think me as your knowledge base, once you uploaded a book, the knowledge will be persisted in the database. You can come back at any time to ask questions about them, across multiple books.",
+    "Pose moi toutes les questions sur l\'agence",
 }
 
 export default function IndexPage() {
@@ -176,12 +176,6 @@ export default function IndexPage() {
           </div>
           <div className="self-start">
             <Button
-              disabled={
-                !files ||
-                isUploading ||
-                !cookieValue.openaiApiKey ||
-                !cookieValue.pineconeApiKey
-              }
               onClick={handleUpload}
             >
               {!isUploading ? (
@@ -254,11 +248,6 @@ export default function IndexPage() {
                 />
                 <div className="items-center sm:flex">
                   <Button
-                    disabled={
-                      isAsking ||
-                      !cookieValue.openaiApiKey ||
-                      !cookieValue.pineconeApiKey
-                    }
                     onClick={handleSubmit}
                   >
                     {!isAsking ? (
