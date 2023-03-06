@@ -164,8 +164,7 @@ export default function IndexPage() {
                     <p>Drop the files here ...</p>
                   ) : (
                     <p>
-                      Drag and drop a file(.pdf, .txt, .md) here, or click to
-                      select file
+                      Drag and drop a file(.pdf, .txt, .md) here, or click to select file
                     </p>
                   )}
                 </>
